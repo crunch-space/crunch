@@ -19,6 +19,9 @@ on:
       VERSION:
         type: string
         default: v1.1.${{ github.run_number }}
+    secrets:
+      DOCKERHUB_TOKEN:
+        required: true
     outputs:
       image:
         description: "The image of docker build tag"
@@ -65,5 +68,5 @@ jobs:
       - name: GH Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ ENV.VERSION  }}
+          tag_name: ${{ ENV.VERSION }}
           target_commitish: ${{ github.ref_name }}

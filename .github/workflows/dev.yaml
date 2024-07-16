@@ -1,14 +1,6 @@
 name: test-build && deploy
 on:
   workflow_dispatch:
-    inputs:
-      DOCKERHUB_USERNAME:
-        default: ohdat123
-        type: string
-      DOCKERHUB_REPO:
-        type: string
-        default: ohdat
-
 jobs:
   build:
     uses: ./.github/workflows/build.yaml

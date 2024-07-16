@@ -19,7 +19,8 @@ jobs:
       image: ${{ inputs.DOCKERHUB_REPO }}/${{ github.event.repository.name }}:${{ inputs.version || github.ref_name }}
     outputs:
       image: ${{ env.image }}
-
+    steps:
+      - run: echo ${{ inputs.image ||env.image }}
   deploy:
     needs: image
     uses: ohdat/actions/.github/workflows/helm-cd.yml@master

@@ -19,9 +19,9 @@ on:
       VERSION:
         type: string
         default: v1.1.${{ github.run_number }}
-    # secrets:
-    #   DOCKERHUB_TOKEN:
-    #     required: true
+    secrets:
+      DOCKERHUB_TOKEN:
+        required: true
     outputs:
       image:
         description: "The image of docker build tag"

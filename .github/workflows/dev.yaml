@@ -4,8 +4,8 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/build.yaml
-    # secrets:
-    #   DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+    secrets:
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
     with:
       VERSION: v0.1.${{ github.run_number }}
   deploy:

@@ -4,10 +4,10 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/build.yaml
+    # secrets:
+    #   DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
     with:
       VERSION: v0.1.${{ github.run_number }}
-    secrets:
-      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
   deploy:
     needs: build
     uses: ohdat/actions/.github/workflows/helm-cd.yml@master

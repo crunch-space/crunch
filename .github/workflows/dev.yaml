@@ -1,0 +1,28 @@
+name: test-build && deploy
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    uses: ./.github/workflows/build.yaml
+    secrets:
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+    with:
+      VERSION: v0.1.${{ github.run_number }}
+  deploy:
+    needs: build
+    uses: ohdat/actions/.github/workflows/helm-cd.yml@master
+    strategy:
+      matrix:
+        include:
+          - helm: ${{ github.event.repository.name }} ohdat/website
+            set: "image.repository=${{ needs.build.outputs.image}},resources=null,gateway.hosts[0]=${{ github.event.repository.name }}.dev.catgpt.chat"
+    with:
+      environment: develop
+      kubename: ohdat-dev
+      namespace: dev-website
+      helm: ${{ matrix.helm }}
+      set: ${{ matrix.set }}
+      helm-repo: https://ohdat.github.io/helm-template/
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_AK }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SK }}

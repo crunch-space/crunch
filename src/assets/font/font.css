@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'GillSans';
+    src: url('./GillSans.ttf') format('truetype'); /* 使用webpack的url-loader或file-loader来处理字体文件 */
+    font-weight: normal;
+    font-style: normal;
+  }

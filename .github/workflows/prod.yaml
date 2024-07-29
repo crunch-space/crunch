@@ -1,0 +1,42 @@
+name: produce deploy
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: string
+        description: "tag version or choose tag"
+      DOCKERHUB_REPO:
+        type: string
+        default: ohdat
+      cacheid:
+        type: string
+        description: "cache id"
+        default: "E3FTL5PT0NQ1U7"
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    env:
+      image: ${{ inputs.DOCKERHUB_REPO }}/${{ github.event.repository.name }}:${{ inputs.version || github.ref_name }}
+    outputs:
+      image: ${{ env.image }}
+    steps:
+      - run: echo ${{ inputs.image ||env.image }}
+  deploy:
+    needs: image
+    uses: ohdat/actions/.github/workflows/helm-cd.yml@master
+    strategy:
+      matrix:
+        include:
+          - helm: ${{ github.event.repository.name }} ohdat/website
+            set: "image.repository=${{ needs.image.outputs.image}},resources=null,gateway.hosts[0]=www.crunch.space,redirect.enabled=true,redirect.form=crunch.space,redirect.to=www.crunch.space"
+    with:
+      environment: produce
+      kubename: ohdat-prod
+      namespace: website
+      helm: ${{ matrix.helm }}
+      set: ${{ matrix.set }}
+      helm-repo: https://ohdat.github.io/helm-template/
+      cacheid: ${{ inputs.cacheid }}
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_AK }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SK }}

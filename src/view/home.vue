@@ -248,19 +248,122 @@ Refine smart contract system.</li>
             <div class="auntitle"> TEAM</div>
           <div class="auntbot">Who've Put Their Cookies🍪In Our Jar</div>
         </div>
-        <div class="ronbox">
-          <div class="choosimg chos1"></div>
-          <div class="choosimg chos2"></div>
-          <div class="choosimg chos1"></div>
-          <div class="choosimg chos2"></div>
-          <div class="choosimg chos1"></div>
-          <div class="choosimg chos2"></div>
-          <div class="choosimg chos1"></div>
-          <div class="choosimg chos2"></div>
-          <div class="choosimg chos1"></div>
-          <div class="choosimg chos2"></div>
-
+        <div class="runben">
+          <div class="setbo">
+            <div   class="showpis">
+              <div class="enp">
+                <div class="fonttext  fon1 fon" >
+                    0xTalin <br/>
+                    <div class="fontdeta">Cofounder</div>
+                      <ul class="fonttea">
+                        <li>7+ years as a serial entrepreneur, with experience in IP incubation and investment;</li>
+                        <li>Co-founder of OHDAT Labs: integrated 10+ IPs/Brands into Web3 via NFT technology;</li>
+                        <li>Crypto OG and professional NFT collector;</li>
+                        <li>Recognized in Forbes China's 30 Under 30 list.</li>
+                      </ul>
+                </div>
+                <div class="opciimg">
+                    <img src="../assets/img/group/y1.png" alt="" srcset="">
+                </div>
+                </div>
+            </div>
+            <div class="logopis los1"></div>
+          </div>
+          <div class="setbo">
+            
+            <div class="logopis los2"></div>
+               <div   class="showpis">
+              <div class="enp">
+                <div class="fonttext  fon2 fon" >
+                    0xkappa.eth <br/>
+                    <div class="fontdeta">Cofounder</div>
+                      <ul class="fonttea">
+                        <li>Led the creation of a top 3 social gaming product in a pre-IPO company achieving 100 million USD GMV</li>
+                        <li>8yrs+ content & IP investor over 800+ projects with $70M revenue generated;</li>
+                        <li>Co-founder of a short film start-up and managed a 200+ post-production team.</li>
+                        <!-- <li>Recognized in Forbes China's 30 Under 30 list.</li> -->
+                      </ul>
+                </div>
+                <div class="opciimg">
+                    <img src="../assets/img/group/y2.png" alt="" srcset="">
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="setbo">
+             <div   class="showpis">
+              <div class="enp">
+                <div class="fonttext  fon3 fon" >
+                   Sanaka <br/>
+                    <div class="fontdeta">Head of Growth</div>
+                      <ul class="fonttea">
+                        <li>9+yrs in global launch and marketing;</li>
+                        <li>Global IP BD Head at TikTok;</li>
+                        <li>Marketing & Growth Advisor of a Kucoin & Huobi-listed X2E platform;</li>
+                        <li>Launcher at Uber</li>
+                      </ul>
+                </div>
+                <div class="opciimg">
+                    <img src="../assets/img/group/y3.png" alt="" srcset="">
+                </div>
+                </div>
+            </div>
+            <div class="logopis los3"></div>
+          </div>
+          <div class="setbo">
+              
+            <div class="logopis los4"></div>
+           <div   class="showpis">
+              <div class="enp">
+                <div class="fonttext  fon4 fon" >
+                  0xChristophe <br/>
+                    <div class="fontdeta">PR Head</div>
+                      <ul class="fonttea">
+                        <li> 9+yrs in financial industry</li>
+                        <li>VP of Investment at Fidelity Investments</li>
+                        <li>Strategy Consultant at McKinsey</li>
+                        <li>Dual Master's degree (Finance & Math) from top US universities.</li>
+                      </ul>
+                </div>
+                <div class="opciimg">
+                    <img src="../assets/img/group/y4.png" alt="" srcset="">
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="setbo">
+           <div   class="showpis">
+              <div class="enp">
+                <div class="fonttext  fon5 fon" >
+                    Poeta <br/>
+                    <div class="fontdeta">Producer</div>
+                      <ul class="fonttea">
+                        <li>Independent Producer and Senior Content Advisor at Warner Bros. Discovery</li>
+                        <li>Adjunct Lecturer at European University Cyprus</li>
+                        <li>Founder of a regional top 3 travel short-video app</li>
+                        <li>Directed and produced over 50+ TV series and documentaries</li>
+                      </ul>
+                </div>
+                <div class="opciimg">
+                    <img src="../assets/img/group/y5.png" alt="" srcset="">
+                </div>
+                </div>
+            </div>
+            <div class="logopis los5"></div>
+          </div>
         </div>
+        <!-- <div class="ronbox">
+          <div class="choosimg chos1"></div>
+          <div class="choosimg chos2"></div>
+          <div class="choosimg chos1"></div>
+          <div class="choosimg chos2"></div>
+          <div class="choosimg chos1"></div>
+          <div class="choosimg chos2"></div>
+          <div class="choosimg chos1"></div>
+          <div class="choosimg chos2"></div>
+          <div class="choosimg chos1"></div>
+          <div class="choosimg chos2"></div>
+        </div> -->
 
       </div>
       <div class="bortom">
@@ -906,10 +1009,182 @@ left: 400px; */
 }
 .aunaen {
   width: 1440px;
-  height: 613px;
+  height: 979px;
   position: relative;
   background: linear-gradient(180deg, #1a1b1a 0%, #000000 100%);
 }
+.runben{
+  width: 1185px;
+  height: 602px;
+  /* background: red; */
+    display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 165px;
+  left: 128px;
+}
+.setbo{
+  width:237px;
+  height: 602px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.logopis{
+  width: 237px;
+  height: 237px;
+  border-radius: 70px;
+    background-size: 100% 100%;
+  transition: background-image 0.3s ease-in-out;
+}
+.los1{
+  background-image: url('../assets/img/group/f1-1.png');
+
+}
+.los1:hover{
+  background-image: url('../assets/img/group/f1-2.png');
+}
+.los2{
+  background-image: url('../assets/img/group/d1-1.png');
+}
+.los2:hover{
+  background-image: url('../assets/img/group/d1-2.png');
+}
+.los3{
+  background-image: url('../assets/img/group/t1-1.png');
+}
+.los3:hover{
+  background-image: url('../assets/img/group/t1-2.png');
+}
+.los4{
+  background-image: url('../assets/img/group/m1-1.png');
+}
+.los4:hover{
+  background-image: url('../assets/img/group/m1-2.png');
+}
+.los5{
+  background-image: url('../assets/img/group/w1-1.png');
+}
+.los5:hover{
+  background-image: url('../assets/img/group/w1-2.png');
+}
+.showpis{
+  width: 237px;
+  height: 365px;
+  border-radius: 70px;
+  background: white;
+  position: relative;
+
+
+}
+.fonttext{
+  width: 237px;
+  height: 52px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  text-align: center;
+  color: #1a1b1a;
+
+font-size: 30px;
+font-weight: 700;
+line-height: 34.73px;
+ z-index: 999;
+   transition: color 0.35s;
+
+}
+.fontdeta{
+font-size: 18px;
+font-weight: 700;
+}
+.fon1{
+  color: #A793DB;
+}
+.fon2{
+  color: #DC7755;
+}
+
+.fon3{
+  color: #D6B512;
+}
+
+.fon4{
+  color: #A793DB;
+}
+
+.fon5{
+  color: #DC7755;
+}
+
+
+.showpis:hover .fon{
+  color: black;
+}
+
+.fonttea{
+      padding-left: 18px;
+    width: 189px;
+    height: 152px;
+    font-size: 12px;
+    font-weight: 600;
+  
+    text-align: left;
+    position: absolute;
+    top: 133px;
+    left: 20px;
+    line-height: 16.8px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+}
+.showpis:hover .fonttea{
+  opacity: 1;
+}
+.opciimg{
+  width:237px ;
+  height: 237px;
+  background: #E2DBE9;
+  border-radius: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s;
+  
+}
+.opciimg img{
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+left: 28px;
+ transition: opacity 0.35s;
+}
+.enp{
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+}
+.showpis:hover .enp{
+    background: #E2DBE9 ;
+}
+.showpis:hover .opciimg{
+ bottom: 128px;
+}
+.showpis:hover .opciimg img{
+  bottom: 25px;
+ opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
 .aunbox {
   width: 598px;
   height: 83px;
@@ -944,7 +1219,7 @@ left: 400px; */
   border-bottom: 4px solid white;
 }
 .tapqtil {
-  transition: transform 0.3s, font-size 0.3s; /* 平滑过渡效果 */
+  transition: transform 0.5s, font-size 0.5s; /* 平滑过渡效果 */
   font-size: 32px;
   font-weight: 700;
   line-height: 38.4px;
@@ -1031,12 +1306,12 @@ left: 400px; */
   color: white ;
 } 
 .inosea2:hover #fore {
- 
+
   color: white ;
 } 
 .inoeshow:hover .fontrt {
   color: black;
-  padding-top: 15px;
+  padding-top: 13px;
   /* transform: translate(0px,5px); */
 }
 .inosea2:hover .tea {
@@ -1044,7 +1319,7 @@ left: 400px; */
   color: white ;
 }
 .inoeshow:hover .tapqtil {
-  font-size: 40px; /* 鼠标悬浮时字体增大 */
+  font-size: 45px; /* 鼠标悬浮时字体增大 */
   transform: translateY(-10px); /* 从底部往上移动10像素 */
 }
 .coy {
@@ -1088,12 +1363,12 @@ left: 400px; */
   height: 147px;
 }
 .chos1 {
-  background-image: url('../assets/img/logo1-1.png');
+  background-image: url('../assets/img/group/d1-1.png');
   background-size: 100% 100%;
   transition: background-image 0.3s ease-in-out;
 }
 .chos1:hover {
-  background-image: url('../assets/img/logo1-2.png');
+  background-image: url('../assets/img/group/d1-2.png');
 }
 .chos2 {
   background-image: url('../assets/img/logo2-1.png');

@@ -19,7 +19,7 @@
          </div>
        <div class="quanping" v-if="alllog"></div>
       <!-- 遮罩层 -->
-      <div class="mp4">
+      <div class="mp4" id="first">
         <div class="gradient"></div>
         <!-- <div class="gradient"></div> -->
         <div class="gradient"></div>
@@ -51,16 +51,16 @@
           Try A Bite
         </div>
       </div>
-      <div class="chosebox flex zd2">
+      <div class="chosebox flex zd2"  id='CrunchSpace'>
         <div class="chose bos1">CrunchSpace</div>
         <div class="chose bos2 adda">Airdrop</div>
         <div class="chose bos3 adda">Party</div>
         <div class="chose bos4 adda">CrunchBox App</div>
       </div>
-      <div class="about">
+      <div class="about" >
         <div id="stat1" class="title zd11"> About CrunchSpace </div>
         <!-- <div class="title zd11"></div> -->
-        <div class="aboutbg ">
+        <div class="aboutbg " >
               
           <div id="stat" class="state zd11">A Decentralized Protocol Network for Entertainment Assets 
 On-chain Issuance and Distribution</div>
@@ -114,7 +114,7 @@ On-chain Issuance and Distribution</div>
               <div class="hiddenbox3 his">
                 <div class="hiddenimg hifont3 flex">
                   <img class="ww" src="../assets/img/Pizza.png" alt="" srcset="">
-                  <div class="hisetext">Fans</div>
+                  <div class="hisetext" >Fans</div>
                 </div>
                 <div class="hiatext">
                   <p class="addtile hifont3">Proactive Distribution</p>
@@ -133,7 +133,7 @@ On-chain Issuance and Distribution</div>
           </div>
         </div>
       </div>
-      <div class="aunear">
+      <div class="aunear"  id="ROADMAP">
         <div class="aunbox">
           <div class="auntitle"> ROADMAP</div>
           <div class="auntbot">Strategic Growth and Innovation</div>
@@ -248,7 +248,7 @@ Refine smart contract system.</li>
         <div class="aunbox">
           <!-- <div class="auntitle"> BACKERS</div>
           <div class="auntbot">Empowering Investors: A Transparent and Rewarding Journey in Web3 Crowdfunding</div> -->
-            <div class="auntitle"> TEAM</div>
+            <div class="auntitle" id="team"> TEAM</div>
           <div class="auntbot">Who've Put Their Cookies🍪In Our Jar</div>
         </div>
         <div class="runben">
@@ -378,10 +378,18 @@ Refine smart contract system.</li>
         </div>
         <div class="navigat">
           <div class="showast titen">Navigation</div>
-          <div class="showast">Our Drops</div>
-          <div class="showast">What We Do</div>
-          <div class="showast">Who We Are</div>
-          <div class="showast">Backers & Advisors</div>
+        <div class="showast" @click="goscroll('first')">Our Drops</div>
+        <div class="showast" @click="goscroll('ROADMAP')">What We Do</div>
+        <div class="showast" @click="goscroll('CrunchSpace')">Who We Are</div>
+        <div class="showast" @click="goscroll('team')">Backers & Advisors</div>
+
+
+
+
+          <!-- <a class="showast" href="#first"></a>
+          <div class="showast"><a class="showast" href="#ROADMAP"></a></div>
+          <div class="showast"><a class="showast" href="#CrunchSpace"></a></div>
+          <div class="showast"> <a class="showast" href="#team"></a> </div> -->
         </div>
         <div class="legal">
           <div class="pokiu titen">Legal</div>
@@ -421,6 +429,10 @@ export default {
   // mounted() {},
   // Vue方法定义
   methods: {
+    goscroll(anchorId){
+        var element = document.getElementById(anchorId);
+            element.scrollIntoView({ behavior: 'smooth' });
+    },
       openCenteredWindow(url, width, height) {
   // 计算居中的位置
   var left = (screen.width / 2) - (width / 2);
@@ -596,6 +608,9 @@ export default {
 
 <style scoped  >
 /* @import url(''); 引入css类 */
+a{
+  text-decoration: none;
+}
 .iphone{
   background-image:url('../assets/img/iPhone.png') ;
   background-size : 100% 100% ;

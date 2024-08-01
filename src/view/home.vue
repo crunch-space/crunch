@@ -1,7 +1,10 @@
 <!-- Dom模板 -->
 <template>
-  <div class="box">
-   
+
+  <div  class="box">
+     <!-- <iframe src="../assets/serve/Pr m,mivatePolicy.pdf" frameborder="0" class="pdfset" style="width: 100%; height: 100%"></iframe> -->
+ 
+
     <!-- Dom内容 -->
     <div class="main">
       <div class="iphone">
@@ -26,7 +29,7 @@
         <div class="headSet flex">
           <div><img class="logo" src="../assets/img/Logo.png" alt="" srcset=""></div>
           <div class="flex">
-            <div><img class="twiter" src="../assets/img/X.png" alt="" srcset=""></div>
+            <div><img class="twiter" @click="gotwiter" src="../assets/img/X.png" alt="" srcset=""></div>
             <div class="logbtn" @click="login"> Log in</div>
           </div>
         </div>
@@ -50,9 +53,9 @@
       </div>
       <div class="chosebox flex zd2">
         <div class="chose bos1">CrunchSpace</div>
-        <div class="chose bos2">Airdrop</div>
-        <div class="chose bos3">Party</div>
-        <div class="chose bos4">CrunchBox App</div>
+        <div class="chose bos2 adda">Airdrop</div>
+        <div class="chose bos3 adda">Party</div>
+        <div class="chose bos4 adda">CrunchBox App</div>
       </div>
       <div class="about">
         <div id="stat1" class="title zd11"> About CrunchSpace </div>
@@ -382,8 +385,8 @@ Refine smart contract system.</li>
         </div>
         <div class="legal">
           <div class="pokiu titen">Legal</div>
-          <div class="pokiu">Privacy Policy</div>
-          <div class="pokiu">Terms and conditions</div>
+          <div class="pokiu" @click="open(1)">Privacy Policy</div>
+          <div class="pokiu"  @click="open(0)" >Terms and conditions</div>
         </div>
       </div>
     </div>
@@ -393,10 +396,15 @@ Refine smart contract system.</li>
 
 <script>
 // import a from './a'; // 引入组件
+
 export default {
+
   name: '',
   data() {
     return {
+     pdfUrl: "",
+    pageTotal: 0,
+      // pdfSrc:require('../assets/serve/PrivatePolicy.pdf'),
       logmp4:false,
       logshow:false,
       alllog:false,
@@ -410,9 +418,35 @@ export default {
   // 生命周期 - 创建完成（访问当前this实例）
   created() {},
   // 生命周期 - 挂载完成（访问DOM元素）
-  mounted() {},
+  // mounted() {},
   // Vue方法定义
   methods: {
+      openCenteredWindow(url, width, height) {
+  // 计算居中的位置
+  var left = (screen.width / 2) - (width / 2);
+  var top = (screen.height / 2) - (height / 2);
+ 
+  // 打开窗口
+  var newWindow = window.open(url, '_blank', `top=${top},left=${left},width=${width},height=${height}`);
+ 
+  // 如果窗口打开成功，则焦点聚集到新窗口
+  if (newWindow) {
+    newWindow.focus();
+  }
+},
+  gotwiter(){
+ window.open('https://x.com/crunch_web3', '_blank',)
+  },
+
+    open(e){
+      if (e == 0 ){
+        this.openCenteredWindow('https://drive.google.com/file/d/118FHmZw8cfaXzYKAbkv4mgJwVIMaYI1g/view?usp=sharing', 800, 600);
+      // window.open('', '_blank', 'width=800,height=600,left=100,top=100')
+      }else{
+         this.openCenteredWindow('https://drive.google.com/file/d/1TO5g8FFYygfJl84TadXPTUZfedMdTsVR/view?usp=sharing', 800, 600);
+          // window.open('', '_blank', 'width=800,height=600,left=100,top=100')
+      }
+    },
     login(){
       this.logshow = true
       this.alllog = true
@@ -630,6 +664,26 @@ opacity: 0px; */
   height: 39px;
   padding-left: 126px;
   padding-top: 10px;
+}
+.twiter:hover{
+    content: url('../assets/img/xh.png');
+}
+.chose{
+  position: relative;
+}
+.adda:hover::after {
+  content: 'Coming Soon';
+  position: absolute;
+  top: -35px; /* 文字位于元素上方 */
+  left: 50%;
+  transform: translate(-50%,0);
+  width: 100%;
+  color:rgba(255,255,255,0.7);;
+  font-style: italic;
+  /* text-align: center; */
+  padding: 10px;
+  /* background-color: #f5f5f5; */
+  transition: top 0.3s;
 }
 .twiter {
   width: 40px;
@@ -1236,7 +1290,7 @@ left: 28px;
   font-weight: 700;
   line-height: 21.6px;
   text-align: center;
-  transition: transform 0.5s color ease;
+  transition: bottom 0.35s ;
 }
 .tea {
   /* list-style-position: inside; */
@@ -1565,5 +1619,10 @@ margin-top: 33px;
   right: 28px;
   top: 28px;
   cursor: pointer;
+}
+.pdfset{
+  position: fixed;
+  top:0;
+  left:0;
 }
 </style>

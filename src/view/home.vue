@@ -54,8 +54,8 @@
       <div class="chosebox flex zd2"  id='CrunchSpace'>
         <div class="chose bos1">CrunchSpace</div>
         <div class="chose bos2 adda">Airdrop</div>
-        <div class="chose bos3 adda">Party</div>
-        <div class="chose bos4 adda">CrunchBox App</div>
+        <div class="chose bos3 adda">CrunchBox</div>
+        <div class="chose bos4 adda">CrunchUp</div>
       </div>
       <div class="about" >
         <div id="stat1" class="title zd11"> About CrunchSpace </div>

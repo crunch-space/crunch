@@ -15,7 +15,7 @@
        </div>
        <div class="preview" id="mp4a" v-if="logmp4">
         <div> <img class="closeant" @click="closemp4" src="../assets/img/cross.png" alt="" srcset=""></div>
-          <video :src="showvideo" controls  autoplay loop muted preload="auto"></video>
+          <video :src="showvideoiphone" controls  autoplay loop muted preload="auto"></video>
          </div>
        <div class="quanping" v-if="alllog"></div>
       <!-- 遮罩层 -->
@@ -257,7 +257,7 @@ Refine smart contract system.</li>
               <div class="enp">
                 <div class="fonttext  fon1 fon" >
                     0xTalin <br/>
-                    <div class="fontdeta">Cofounder</div>
+                    <div class="fontdeta">Co-Funder</div>
                       <ul class="fonttea">
                         <li>7+ years as a serial entrepreneur, with experience in IP incubation and investment;</li>
                         <li>Co-founder of OHDAT Labs: integrated 10+ IPs/Brands into Web3 via NFT technology;</li>
@@ -278,8 +278,8 @@ Refine smart contract system.</li>
                <div   class="showpis">
               <div class="enp">
                 <div class="fonttext  fon2 fon" >
-                    0xkappa.eth <br/>
-                    <div class="fontdeta">Cofounder</div>
+                    0xkappa<br/>
+                    <div class="fontdeta">Co-Funder</div>
                       <ul class="fonttea">
                         <li>Led the creation of a top 3 social gaming product in a pre-IPO company achieving 100 million USD GMV</li>
                         <li>8yrs+ content & IP investor over 800+ projects with $70M revenue generated;</li>
@@ -378,10 +378,10 @@ Refine smart contract system.</li>
         </div>
         <div class="navigat">
           <div class="showast titen">Navigation</div>
-        <div class="showast" @click="goscroll('first')">Our Drops</div>
-        <div class="showast" @click="goscroll('ROADMAP')">What We Do</div>
-        <div class="showast" @click="goscroll('CrunchSpace')">Who We Are</div>
-        <div class="showast" @click="goscroll('team')">Backers & Advisors</div>
+        <div class="showast" @click="goscroll('CrunchSpace')">What We Do</div>
+                <div class="showast" @click="goscroll('ROADMAP')">Roadmap</div>
+        <div class="showast" @click="goscroll('team')">Who We Are</div>
+        <!-- <div class="showast" @click="goscroll('team')">Backers & Advisors</div> -->
 
 
 
@@ -420,7 +420,8 @@ export default {
       msg: '测试',
       showvideo:
         'https://img.ohdat.io/crunch/AI_Doomsday_Background.mp4?tr=orig',
-        showvideoiphone:'https://img.ohdat.io/crunch/short_AIDoomsday.mp4?tr=orig'
+        showvideoiphone:'https://img.ohdat.io/crunch/short_AIDoomsday.mp4?tr=orig',
+        showvideopiker:'https://img.ohdat.io/crunch/AI_Doomsday_11s.mp4  ',
     }
   },
   // 生命周期 - 创建完成（访问当前this实例）
@@ -1590,9 +1591,9 @@ left: 28px;
 }
 .preview{
 position: fixed;
- width: 989.76px;
-height: 590px;
-top: 90px;
+ width: 400px;
+/* height: 1920px; */
+top: 60px;
 left: 50%;
 border-radius: 16px ;
 border: 1px 0px 0px 0px;
@@ -1604,7 +1605,8 @@ z-index: 99;
   transform: translate(-50%, 0px);
 }
 .preview video{
-width: 989.76px;
+width: 400px;
+border-radius: 12px;
 margin-top: 33px;
 }
 .closeant{
@@ -1613,6 +1615,7 @@ margin-top: 33px;
   position: absolute;
   right: 10px;
   top: 7px;
+  z-index: 999;
 }
 /* #pop:hover{
   opacity: 1;

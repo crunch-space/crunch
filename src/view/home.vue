@@ -8,14 +8,21 @@
     <!-- Dom内容 -->
     <div class="main">
       <div class="iphone">
-         <video class="videos" :src="showvideoiphone" autoplay loop muted preload="auto"></video>
+         <!-- <iframe class="videos" width="420" height="315"
+            src="https://www.youtube.com/embed/ih1l6wb7LhU">
+            </iframe> -->
+            <img class="playbutton" @click="getmp4" src="../assets/img/play.jpg" alt="" srcset="">
+         <!-- <video class="videos" :src="showvideoiphone" autoplay loop muted preload="auto"></video> -->
       </div>
        <div class="showlog" id="pop" v-if="logshow">
           <div class="colsebtn" @click="close"></div>
        </div>
        <div class="preview" id="mp4a" v-if="logmp4">
         <div> <img class="closeant" @click="closemp4" src="../assets/img/cross.png" alt="" srcset=""></div>
-          <video :src="showvideoiphone" controls  autoplay loop muted preload="auto"></video>
+          <iframe  id="myIframe"
+            src="https://www.youtube.com/embed/fHf9gg2TpjE">
+            </iframe>
+          <!-- <video :src="showvideoiphone" controls  autoplay loop muted preload="auto"></video> -->
          </div>
        <div class="quanping" v-if="alllog"></div>
       <!-- 遮罩层 -->
@@ -1159,7 +1166,7 @@ left: 400px; */
 font-size: 30px;
 font-weight: 700;
 line-height: 34.73px;
- z-index: 999;
+ z-index: 79;
    transition: color 0.35s;
 
 }
@@ -1206,7 +1213,7 @@ font-weight: 700;
     color: black;
     opacity: 0;
     transition: opacity 0.5s;
-    z-index: 999;
+    z-index: 79;
 }
 .showpis:hover .fonttea{
   opacity: 1;
@@ -1591,9 +1598,9 @@ left: 28px;
 }
 .preview{
 position: fixed;
- width: 400px;
+ /* width: 400px; */
 /* height: 1920px; */
-top: 60px;
+top: 0;
 left: 50%;
 border-radius: 16px ;
 border: 1px 0px 0px 0px;
@@ -1613,9 +1620,9 @@ margin-top: 33px;
   width: 24px;
   height: 24px;
   position: absolute;
-  right: 10px;
-  top: 7px;
-  z-index: 999;
+  right: -30px;
+  top: 10px;
+  z-index: 79;
 }
 /* #pop:hover{
   opacity: 1;
@@ -1642,5 +1649,20 @@ margin-top: 33px;
   position: fixed;
   top:0;
   left:0;
+}
+
+#myIframe {
+    width: 56.25vh; /* 9:16 = 9/16 = 0.5625 */
+  height: 100vh; /* 100%  height */
+  border: none;
+}
+.playbutton{
+width: 40px;
+height: 40px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+cursor: pointer;
 }
 </style>

@@ -72,10 +72,10 @@
           <div id="stat" class="state zd11">A Decentralized Protocol Network for Entertainment Assets 
 On-chain Issuance and Distribution</div>
 
-          <!-- <div class="title1">About CrunchSpace</div> -->
+          <!-- <div class="title1">About CrunchSpace</div>   -->
           <div class="showbox  ">
             <div class="zhezhaoceng"></div>
-            <div class="showboxa  zd11 env1 other" id="enr1" @mouseover="getmouth(0)" @mouseleave="getout(0)">
+            <div class="showboxa  zd11 env1 other" id="enr1" @mouseover="getmouth(0) " @mouseleave="getout(0)" >
               <img class="group" src="../assets/img/Group1.png" alt="" srcset="">
               <div class="groptext">Creators secure higher returns and increased creative enthusiasm through crowdfunding in the Web3 space.</div>
 
@@ -526,7 +526,7 @@ export default {
 
 
 
-      const a = '350px'
+      const a = '700px'
       if (e == 0) {
         const ap2 = document.getElementById('enr2')
         const ap3 = document.getElementById('enr3')
@@ -622,12 +622,14 @@ a{
 .iphone{
   background-image:url('../assets/img/iPhone.png') ;
   background-size : 100% 100% ;
-  width: 261px;
-height: 537px;
+
 position: absolute;
-top: 102px;
-left: 926px;
+
 z-index: 9;
+width: 652.5px;
+    height: 1342.5px;
+    top: 369px;
+    left: 2428px;
 /* gap: 0px;
 opacity: 0px; */
 
@@ -646,14 +648,15 @@ opacity: 0px; */
   color: black;
 }
 .main {
-  width: 1440px;
+  width: 3840px;
   /* height: 1000px; */
   margin: 0 auto;
   background: rgb(0, 0, 0);
   position: relative;
 }
 .video {
-  width: 1440px;
+  width: 3840px;
+  height: 2160px;
 }
 .videos{
     width: 242px;
@@ -663,7 +666,7 @@ opacity: 0px; */
 }
 .mp4 {
   position: relative;
-  height: 810px;
+  height: 2160px;
 }
 .gradient {
   position: absolute;
@@ -671,8 +674,8 @@ opacity: 0px; */
   left: 0;
   z-index: 1;
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  width: 1440px;
-  height: 810px; /* 设置高度 */
+  width: 3840px;
+  height: 2160px; /* 设置高度 */
 }
 .conctrl {
   z-index: 2;
@@ -683,10 +686,10 @@ opacity: 0px; */
 }
 
 .logo {
-  width: 255px;
-  height: 39px;
-  padding-left: 126px;
-  padding-top: 10px;
+    width: 637.5px;
+    height: 97.5px;
+    padding-left: 315px;
+    padding-top: 25px;
 }
 .twiter:hover{
     content: url('../assets/img/xh.png');
@@ -697,7 +700,7 @@ opacity: 0px; */
 .adda:hover::after {
   content: 'Coming Soon';
   position: absolute;
-  top: -35px; /* 文字位于元素上方 */
+  top: -60px; /* 文字位于元素上方 */
   left: 50%;
   transform: translate(-50%,0);
   width: 100%;
@@ -709,24 +712,24 @@ opacity: 0px; */
   transition: top 0.3s;
 }
 .twiter {
-  width: 40px;
-  height: 40px;
-  padding-top: 10px;
+    width: 65px;
+    height: 65px;
+    padding-top: 25px;
   margin-right: 20px;
   cursor: pointer;
 }
 .logbtn {
-  width: 125px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background: #ffe133;
-  border-radius: 20px;
-  margin-right: 126px;
-  margin-top: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
+ width: 227px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    background: #ffe133;
+    border-radius: 33px;
+    margin-right: 126px;
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 36px;
+    cursor: pointer;
 }
 .headSet {
   width: 100%;
@@ -735,68 +738,69 @@ opacity: 0px; */
 .crunsh {
   z-index: 2;
   position: absolute;
-  top: 150px;
-  left: 125px;
-  color: #ffe133;
-  font-size: 60px;
-  font-weight: 700;
+  top: 614px;
+    left: 310px;
+    color: #ffe133;
+    font-size: 150px;
+    font-weight: 700;
 }
 .crate {
   font-style: italic;
   z-index: 2;
   position: absolute;
-  top: 212px;
-  left: 125px;
-  font-size: 80px;
+ top: 784px;
+  left: 310px;
+  font-size: 200px;
   font-weight: 300;
   color: white;
 }
 .featubtn {
   z-index: 2;
-  width: 165px;
-  height: 64px;
-  line-height: 64px;
+  width: 339px;
+  height: 89px;
+  line-height: 89px;
   text-align: center;
   border-radius: 24px;
   background: #ffe133;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: 700;
   position: absolute;
-  top: 372px;
-  left: 125px;
+  top: 1105px;
+  left: 310px;
   cursor: pointer;
 }
 .mummy {
-  z-index: 2;
-  position: absolute;
-  top: 457px;
-  left: 125px;
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
+z-index: 2;
+    position: absolute;
+    top: 1258px;
+    left: 310px;
+    font-size: 58px;
+    font-weight: 700;
+    color: #ffffff;
 }
 .Cruise {
-  z-index: 2;
-  position: absolute;
-  top: 492px;
-  left: 125px;
-  font-size: 16px;
-  font-weight: 300;
+    z-index: 2;
+    position: absolute;
+    top: 1345px;
+    left: 310px;
+    font-size: 40px;
+    font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 }
 .PreviewBtn {
-  width: 125px;
-  height: 38px;
-  line-height: 38px;
-  text-align: center;
-  border-radius: 20px;
+width: 265px;
+    height: 72px;
+    line-height: 72px;
+    text-align: center;
+    border-radius: 36px;
   border: 1px solid #ffe133;
   background: rgba(0, 0, 0, 0);
   /* background: white; */
   position: absolute;
-  top: 532px;
-  left: 125px;
+  top: 1490px;
+    left: 310px;
   color: white;
+  font-size: 35px;
   cursor: pointer;
   transition: background-color 0.8s ease; /* 平滑过渡效果 */
 }
@@ -811,12 +815,12 @@ opacity: 0px; */
   /* transform: translate(-2%,29%); */
 }
 .play {
-  width: 12px;
-  height: 12px;
+  width: 36px;
+  height: 36px;
   background-image: url('../assets/img/sanjiaoxingyou1.png');
   background-size: 100%, 100%;
 
-  transform: translate(-33%, 106%);
+  transform: translate(-33%, 50%);
 }
 
 .preset {
@@ -825,15 +829,15 @@ opacity: 0px; */
 .chosebox {
   justify-content: center;
   position: absolute;
-  left: 320px;
-  top: 730px;
+  top: 1913px;
+  left: 1120px;
 }
 .chose {
-  width: 200px;
-  height: 24px;
+  width: 400px;
+  height: 57px;
   /* background: red; */
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 36px;
+  font-weight: 600;
   text-align: center;
   cursor: pointer;
   /* border-bottom: 2px solid #ccc; */
@@ -856,35 +860,35 @@ opacity: 0px; */
 }
 .about {
   width: 100%;
-  height: 718px;
+  height: 1250px;
   position: relative;
   /* background: red; */
 }
 .aboutbg {
-  width: 1312px;
-  height: 589px;
+  width: 3280px;
+  height: 1250px;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-top: 120px;
   background: linear-gradient(180deg, #1a1b1a 0%, #000000 100%);
   border-radius: 48px;
   position: relative;
   overflow-x: hidden;
 }
 .title {
-  font-size: 56px;
-
-  font-weight: 700;
-  position: absolute;
-  top: -40px;
-  left: 124px;
-  z-index: 77;
-  width: 710px;
-  height: 65px;
-  padding-left: 17px;
-  /* background-size: 100%, 100%; */
-  color: black;
-  -webkit-text-stroke: 15px white;
-  transition: color 0.2s ease-in-out;
+ font-size: 140px;
+    font-weight: 700;
+    position: absolute;
+    top: -96px;
+    left: 342px;
+    z-index: 77;
+    width: 1413px;
+    height: 65px;
+    padding-left: 17px;
+    /* background-size: 100%, 100%; */
+    color: black;
+    -webkit-text-stroke: 15px white;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 
 }
 .title::after{
@@ -895,20 +899,21 @@ opacity: 0px; */
  left: 17px;
 }
 .state {
-  width: 604px;
-  height: 56px;
-  font-size: 24px;
-  line-height: 27.56px;
-  font-weight: 400;
-  position: absolute;
-  top: 58px;
-  left: 64px;
-  color: rgba(255, 255, 255, 1);
-  transition: color 0.2s ease-in-out;
+     width: 1527px;
+    height: 138px;
+    font-size: 60px;
+    line-height: 68.56px;
+    font-weight: 400;
+    position: absolute;
+    top: 80px;
+    left: 64px;
+    color: rgba(255, 255, 255, 1);
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 .showbox {
-  width: 1184px;
-  height: 297px;
+  width: 3104px;
+  height: 742.5px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -917,8 +922,8 @@ opacity: 0px; */
   transform: translate(-50%, 0%);
 }
 .showboxa {
-  width: 378px;
-  height: 297px;
+  width: 945px;
+    height: 742.5px;
   background: white;
   box-sizing: border-box;
   border-radius: 48px;
@@ -958,11 +963,11 @@ opacity: 0px; */
   transform: scale(1.2);
 }
 .group {
-  width: 248px;
-  height: 200px;
-  position: absolute;
-  top: -50px;
-  left: 16%;
+    width: 623px;
+    height: 520px;
+    position: absolute;
+    top: -115px;
+    left: 18%;
   transform: translate(-50%, 2%);
   transition: transform 1s;
   transform-origin: bottom;
@@ -970,18 +975,18 @@ opacity: 0px; */
   transition: transform 0.5s;
 }
 .groptext {
-  width: 330px;
-  height: 68px;
-  position: absolute;
-  top: 197px;
-  left: 14px;
-  font-weight: 600;
-  line-height: 16.8px;
-  text-align: center;
-  font-size: 14px;
+width: 860px;
+    height: 129px;
+    position: absolute;
+    top: 473px;
+    left: 14px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: center;
+    font-size: 36.8px;
 }
 .set3 {
-  top: 183px;
+  /* top: 183px; */
 }
 .absrrr {
   /* position: static;
@@ -993,47 +998,50 @@ left: 400px; */
   transition: transform 0.5s ease;
   position: absolute;
   top: -50px;
-  right: -270px;
+  right: -598px;
 }
 .hiddenimg {
-  width: 292px;
-  height: 67px;
+  width: 681px;
+    height: 192px;
   justify-content: space-between;
 }
 .hiddenimg .ww {
-  width: 67px;
-  height: 67px;
+  width: 167.5px;
+  height: 167.5px;
 }
 .hifont1 {
   color: rgba(217, 194, 252, 1);
 }
 .hisetext {
-  width: 213px;
-  height: 58px;
-  line-height: 58px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 48px;
-  /* color: white; */
-  align-items: center;
-  margin-top: 5px;
+ width: 547.5px;
+    height: 100px;
+    line-height: 170px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 110px;
+    /* color: white; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 27px;
 }
 .hiatext {
-  width: 324px;
-  height: 215px;
+    width: 750px;
+    height: 440px;
   /* margin-top: 20px; */
 }
 .addtile {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 13px;
+     font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 25px;
 }
 .addmain {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.8px;
-  color: white;
+font-weight: 600;
+    font-size: 32px;
+    line-height: 31.8px;
+    color: white;
 }
 
 .hiddenbox2 {
@@ -1042,7 +1050,7 @@ left: 400px; */
   transition: transform 0.5s ease;
   position: absolute;
   top: -30px;
-  left: -250px;
+  left: -552px;
 }
 .hifont2 {
   color: rgba(255, 225, 51, 1);
@@ -1054,19 +1062,18 @@ left: 400px; */
   transition: transform 0.5s ease;
   position: absolute;
   top: -70px;
-  left: -250px;
+  left: -552px;
 }
 .hifont3 {
   color: rgba(220, 119, 85, 1);
 }
 
 .zhezhaoceng {
-  width: 1332px;
-
-  height: 589px;
-  position: absolute;
-  top: -235px;
-  left: -70px;
+  width: 3300px;
+    height: 1010px;
+    position: absolute;
+    top: -250px;
+    left: -100px;
   /* background: rgba(0, 0, 0, 0.6); */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   z-index: 10;
@@ -1079,37 +1086,37 @@ left: 400px; */
   z-index: 3;
 }
 .aunear {
-  width: 1440px;
-  height: 698px;
+  width: 3840px;
+ height: 1861.33px;
   position: relative;
   background: linear-gradient(180deg, #000000 0%, #1a1b1a 100%);
 }
 .aunaen {
-  width: 1440px;
-  height: 979px;
+        width: 3840px;
+    height: 2610px;
   position: relative;
   background: linear-gradient(180deg, #1a1b1a 0%, #000000 100%);
 }
 .runben{
-  width: 1185px;
-  height: 602px;
+  width: 2950px;
+  height: 1500px;
   /* background: red; */
     display: flex;
   flex-wrap: wrap;
   position: absolute;
-  top: 165px;
-  left: 128px;
+  top: 722.67px;
+  left: 445px;
 }
 .setbo{
-  width:237px;
-  height: 602px;
+ width: 590px;
+    height: 1500px;
   cursor: pointer;
   overflow: hidden;
 }
 
 .logopis{
-  width: 237px;
-  height: 237px;
+     width: 590px;
+    height: 590px;
   border-radius: 70px;
     background-size: 100% 100%;
   transition: background-image 0.3s ease-in-out;
@@ -1146,8 +1153,8 @@ left: 400px; */
   background-image: url('../assets/img/group/w1-2.png');
 }
 .showpis{
-  width: 237px;
-  height: 365px;
+    width: 590px;
+    height: 910px;
   border-radius: 70px;
   background: white;
   position: relative;
@@ -1155,23 +1162,23 @@ left: 400px; */
 
 }
 .fonttext{
-  width: 237px;
-  height: 52px;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  text-align: center;
-  color: #1a1b1a;
-
-font-size: 30px;
-font-weight: 700;
-line-height: 34.73px;
- z-index: 79;
-   transition: color 0.35s;
+  width: 590px;
+    height: 52px;
+    position: absolute;
+    top: 106px;
+    left: 4px;
+    text-align: center;
+    color: #1a1b1a;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 63px;
+    z-index: 79;
+    -webkit-transition: color 0.35s;
+    transition: color 0.35s;
 
 }
 .fontdeta{
-font-size: 18px;
+font-size: 50px;
 font-weight: 700;
 }
 .fon1{
@@ -1199,19 +1206,19 @@ font-weight: 700;
 }
 
 .fonttea{
-      padding-left: 18px;
-    width: 189px;
+    padding-left: 18px;
+    width: 484px;
     height: 152px;
-    font-size: 12px;
+    font-size: 33px;
     font-weight: 600;
-  
     text-align: left;
     position: absolute;
-    top: 133px;
-    left: 20px;
-    line-height: 16.8px;
+    top: 302px;
+    left: 41px;
+    line-height: 40.8px;
     color: black;
     opacity: 0;
+    -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
     z-index: 79;
 }
@@ -1219,8 +1226,8 @@ font-weight: 700;
   opacity: 1;
 }
 .opciimg{
-  width:237px ;
-  height: 237px;
+  width: 590px;
+    height: 590px;
   background: #E2DBE9;
   border-radius: 70px;
   position: absolute;
@@ -1230,11 +1237,11 @@ font-weight: 700;
   
 }
 .opciimg img{
-  width: 180px;
-  height: 180px;
+  width: 450.52px;
+  height: 523.56px;
   position: absolute;
   bottom: 0;
-left: 28px;
+left: 67px;
  transition: opacity 0.35s;
 }
 .enp{
@@ -1263,20 +1270,20 @@ left: 28px;
 
 
 .aunbox {
-  width: 598px;
-  height: 83px;
-  position: absolute;
-  top: 30px;
-  left: 421px;
+ width: 799px;
+    height: 208px;
+    position: absolute;
+    top: 290px;
+    left: 1520px;
   text-align: center;
 }
 .auntitle {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 140px;
   color: white;
 }
 .auntbot {
-  font-size: 16px;
+  font-size: 40px;
   font-weight: 400;
   color: rgba(196, 194, 192, 1);
   line-height: 18.38px;
@@ -1285,60 +1292,59 @@ left: 28px;
   width: 1185px;
   height: 428px;
   position: absolute;
-  top: 170px;
-  left: 128px;
+     top: 608px;
+    left: 428px;
   /* background: #ffe133; */
 }
 .tapq {
-  width: 237px;
+  width: 592px;
   height: 45px;
   text-align: center;
-  border-bottom: 4px solid white;
+  border-bottom: 8px solid white;
 }
 .tapqtil {
   transition: transform 0.5s, font-size 0.5s; /* 平滑过渡效果 */
-  font-size: 32px;
+  font-size: 80px;
   font-weight: 700;
-  line-height: 38.4px;
+  line-height: 1px;
   color: white;
 }
 .fontrt {
-  width: 237px;
-  height: 61px;
-  color: white;
-  top: 58px;
-  left: 16px;
-  padding-top: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21.6px;
+    width: 590px;
+    height: 61px;
+    color: white;
+    top: 58px;
+    left: 16px;
+    padding-top: 34px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 43.6px;
   text-align: center;
   transition: bottom 0.35s ;
 }
 .tea {
   /* list-style-position: inside; */
-  padding-left: 20px;
-  width: 150px;
-  height: 248px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16.8px;
-  text-align: left;
-  position: absolute;
-  top: 64px;
-  left: 34px;
-   line-height: 20px;
+    padding-left: 20px;
+   width: 367.5px;
+    height: 663px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    position: absolute;
+    top: 136px;
+    left: 110px;
 }
 .tea li {
   text-align: left; /* 将文字左对齐 */
 }
 .inoeshow {
-  width: 237px;
+  width: 592px;
 }
 
 .hover-effect {
-  width: 237px;
-  height: 383px;
+  width: 592px;
+  height: 888px;
   background-color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, white 50%);
   background-size: 100% 200%;
@@ -1388,7 +1394,7 @@ left: 28px;
 } 
 .inoeshow:hover .fontrt {
   color: black;
-  padding-top: 13px;
+  padding-top: 45px;
   /* transform: translate(0px,5px); */
 }
 .inosea2:hover .tea {
@@ -1396,20 +1402,20 @@ left: 28px;
   color: white ;
 }
 .inoeshow:hover .tapqtil {
-  font-size: 45px; /* 鼠标悬浮时字体增大 */
+  font-size: 100px; /* 鼠标悬浮时字体增大 */
   transform: translateY(-10px); /* 从底部往上移动10像素 */
 }
 .coy {
   color: rgba(255, 225, 51, 1);
 }
 .bod {
-  border-bottom: 4px solid rgba(255, 225, 51, 1);
+  border-bottom: 8px solid rgba(255, 225, 51, 1);
 }
 .coy1 {
   color: rgba(217, 194, 252, 1);
 }
 .bod1 {
-  border-bottom: 4px solid rgba(217, 194, 252, 1);
+  border-bottom: 8px solid rgba(217, 194, 252, 1);
 }
 .coy2 {
   color: rgba(220, 119, 85, 1);
@@ -1418,7 +1424,7 @@ left: 28px;
   transition: color 0.5s ease-in-out; /* 设置过渡效果 */
 }
 .bod2 {
-  border-bottom: 4px solid rgba(220, 119, 85, 1);
+  border-bottom: 8px solid rgba(220, 119, 85, 1);
 }
 
 .coy0 {
@@ -1456,65 +1462,66 @@ left: 28px;
   background-image: url('../assets/img/logo2-2.png');
 }
 .bortom {
-  width: 1440px;
-  height: 308px;
+  width: 3840px;
+  height: 820px;
   background: linear-gradient(180deg, #000000 0%, #1a1b1a 100%);
   position: relative;
 }
 .leftfont {
-  color: white;
-  position: absolute;
-  width: 255px;
-  height: 10px;
-  top: 218px;
-  left: 128px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 14px;
-  text-align: center;
+    color: white;
+    position: absolute;
+    width: 665px;
+    height: 25px;
+    top: 610px;
+    left: 380px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
 }
 .loads {
   position: absolute;
-  width: 193px;
-  height: 171px;
-  top: 57px;
-  left: 623px;
-  background-image: url('../assets/img/Frame.png');
-  background-size: cover;
+    width: 482px;
+    height: 427.06px;
+    top: 212.67px;
+    left: 1679px;
+    background-image: url('/static/img/Frame.a3a6b2f.png');
+    background-size: cover;
 }
 .navigat {
   position: absolute;
-  width: 111px;
-  height: 122px;
-  top: 106px;
-  left: 991px;
-  font-family: Gill Sans;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 28px;
-  text-align: right;
+    width: 360px;
+    height: 313px;
+    top: 227.67px;
+    left: 2674px;
+    font-family: Gill Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: right;
 }
 
 .showast {
   color: rgba(102, 102, 102, 1);
-  font-size: 14px;
+  font-size: 37px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 72px;
   text-align: right;
   cursor: pointer;
 }
 
 .legal {
-  width: 135px;
-  height: 66px;
-  top: 106px;
-  left: 1188px;
+  width: 360px;
+   height: 313px;
+  top: 227px;
+    left: 3128px;
   position: absolute;
 }
 .pokiu {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 28px;
+ font-size: 37px;
+  
+  line-height: 72px;
+  font-weight: 400;
   text-align: right;
   color: rgba(102, 102, 102, 1);
   cursor: pointer;
@@ -1582,11 +1589,12 @@ left: 28px;
   z-index: 99;
 } */
 #pop{
-    width: 795px;
-  height: 391px;
+    width: 1990.5px;
+  height: 977.5px;
   background-image: url('../assets/img/log.png');
+  background-size: cover;
   position: fixed;
-  top: 191px;
+  top: 591px;
   left: 50%;
   transform: translate(-50%,0%);
   opacity: 0; /* 初始状态为完全透明 */
@@ -1617,10 +1625,10 @@ border-radius: 12px;
 margin-top: 33px;
 }
 .closeant{
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  right: -30px;
+  right: -60px;
   top: 10px;
   z-index: 79;
 }
@@ -1637,13 +1645,13 @@ margin-top: 33px;
   background: rgba(0,0,0,0.7);
 }
 .colsebtn{
-  width: 15px;
-  height: 15px;
-  /* background: red; */
-  position: absolute;
-  right: 28px;
-  top: 28px;
-  cursor: pointer;
+     width: 50px;
+    height: 50px;
+    /* background: red; */
+    position: absolute;
+    right: 64px;
+    top: 62px;
+    cursor: pointer;
 }
 .pdfset{
   position: fixed;

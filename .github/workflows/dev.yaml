@@ -18,7 +18,7 @@ jobs:
             set: "image.repository=${{ needs.build.outputs.image}},resources=null,gateway.hosts[0]=${{ github.event.repository.name }}.dev.catgpt.chat"
     with:
       environment: develop
-      kubename: ohdat-dev
+      kubename: ohdat-prod
       namespace: dev-website
       helm: ${{ matrix.helm }}
       set: ${{ matrix.set }}
